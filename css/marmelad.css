@@ -505,6 +505,7 @@ p {
 }
 
 .footer {
+
     padding: 33px 0;
     background: #201b2d;
 }
@@ -710,6 +711,10 @@ p {
     .header_link {
         font-size: 18px;
     }
+    .program-container{
+        margin-bottom: 30px;
+    }
+
     .program-container-1 {
         display: flex;
         flex-direction: column;
@@ -719,6 +724,24 @@ p {
         display: flex;
         flex-direction: column;
     }
+    .slider {
+        width: 300px;
+    }
+    .slides img {
+        width: 300px;
+    }
+    .program {
+        height: 360px;
+        width: 90%;
+    }
+    .pr_img{
+        height: 140px;
+    }
+    .pr_price{
+        height: 30px;
+        width: 30%;
+        margin-left: 15px;
+    }
     .skills_rate {
         display: flex;
         flex-direction: column;
@@ -727,14 +750,19 @@ p {
 
     .colomn_1, .colomn_2, .colomn_3 {
         border-radius: 15px;
-        margin: 30px 0 30px 70px;
+        margin: 10px 0;
     }
+
 
 }
 
 /* 320px - 576px */
 @media screen and (max-width: 576px) {
     .container {
+        width: 90%;
+    }
+
+    .container-1 {
         width: 90%;
     }
 }

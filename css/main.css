@@ -936,12 +936,21 @@ p {
         display: flex;
         flex-direction: column;
     }
+    .product_transition_card__choice {
+        margin: -50px 0;
+    }
 }
 
 /* 320px - 576px */
 @media screen and (max-width: 576px) {
     .container {
         width: 90%;
+    }
+    .offer {
+        margin: 0;
+    }
+    .picture {
+        margin-right: 0;
     }
 }
 

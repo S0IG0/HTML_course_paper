@@ -1,4 +1,13 @@
+html{
+    /* Для прижатого вниз футера */
+    height: 100%;
+}
+
 body {
+    /* Для прижатого вниз футера */
+    position: relative;
+    min-height: 100%;
+    /* --------------------- */
     font-family: 'Open Sans', sans-serif;
     color: #201b2d;
     font-size: 15px;
@@ -305,6 +314,11 @@ p {
 }
 
 .footer {
+    /* Для прижатого вниз футера */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* ---------- */
     padding: 33px 0;
     background: #201b2d;
 }

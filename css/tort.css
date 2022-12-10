@@ -714,6 +714,10 @@ p {
         font-size: 18px;
     }
 
+    .program-container{
+        margin-bottom: 30px;
+    }
+
     .program-container-1 {
         display: flex;
         flex-direction: column;
@@ -722,6 +726,37 @@ p {
     .program-container-2 {
         display: flex;
         flex-direction: column;
+    }
+    .slider {
+        width: 300px;
+    }
+    .slides img {
+        width: 300px;
+    }
+    .program {
+        height: 360px;
+        width: 90%;
+    }
+    .pr_img{
+        height: 140px;
+    }
+    .pr_price{
+        height: 30px;
+        width: 30%;
+        margin-left: 15px;
+    }
+    .pr_price_out {
+        width: 25%;
+        margin-left: 10px;
+    }
+
+    .pr_intro{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .pr_med_1 {
+        height: 340px;
     }
 
 }

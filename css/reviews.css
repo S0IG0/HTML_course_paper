@@ -1,4 +1,13 @@
+html{
+    /* Для прижатого вниз футера */
+    height: 100%;
+}
+
 body {
+    /* Для прижатого вниз футера */
+    position: relative;
+    min-height: 100%;
+    /* --------------------- */
     font-family: 'Open Sans', sans-serif;
     color: #201b2d;
     font-size: 15px;
@@ -246,6 +255,11 @@ p {
 
 
 .footer {
+    /* Для прижатого вниз футера */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* ---------- */
     padding: 33px 0;
     background: #201b2d;
 }
@@ -557,6 +571,16 @@ p {
 @media screen and (max-width: 576px) {
     .container {
         width: 90%;
+    }
+    .container-1 {
+        width: 90%;
+    }
+    #btn2:checked~.slider-inner .slides {
+        transform: translate(-260px);
+    }
+
+    #btn3:checked~.slider-inner .slides {
+        transform: translate(-530px);
     }
 }
 
