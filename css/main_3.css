@@ -1,0 +1,720 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #201b2d;
+    font-size: 15px;
+    padding: 0; /* Убираем для body отступы */
+    margin: 0; /* Убираем для body отступы */
+    overflow-x: hidden;
+}
+
+div, p, input, button, form, span, a, ul, li {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900; /* Задание толщины шрифта */
+}
+
+p {
+    line-height: 1.65em; /* Расстояние между строками */
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto; /* Контейнер автоматически всегда будет находиться по середине */
+}
+
+.container-1 {
+    width: 1170px;
+    margin: 0 auto; /* Контейнер автоматически всегда будет находиться по середине */
+    background-image: url("https://www.pinclipart.com/picdir/big/239-2394820_i-want-to-thank-everyone-that-stopped-by.png");
+    background-size: 310px;
+}
+
+.header {
+    /* Создание градиента с помощью онлайн сервиса */
+
+    background: -webkit-linear-gradient(90deg,#ea628b,#f4b1f5,#b3b2f5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(90deg,#ea628b,#f4b1f5,#b3b2f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding-top: 15px; /* Отступ сверху для header */
+    padding-bottom: 15px;
+    color: #000;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+
+.header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-image: url("https://www.pinclipart.com/picdir/big/239-2394820_i-want-to-thank-everyone-that-stopped-by.png");
+    background-size: 310px;
+}
+
+.header_logo_menu {
+    display: flex;
+    justify-content: space-between; /* Прижатие элементов по краям */
+}
+
+.logo {
+    position: relative;
+    z-index: 3;
+    max-width: 100%;
+}
+
+.header_menu {
+    display: flex;
+}
+
+.header_menu p {
+    padding-left: 80px;
+}
+
+.header_burger {
+    display: none; /* ширина экрана больше 768 -> скрываем меню бургер*/
+}
+
+.header_menu {
+
+}
+
+.header_list {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.header_list li {
+    list-style: none; /* убрали точки */
+    margin-left: 30px;
+}
+
+.header_link {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.wrapper_container {
+    padding-top: 155px;
+    padding-bottom: 50px;
+    background: -webkit-linear-gradient(90deg,#ea628b,#f4b1f5,#b3b2f5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(90deg,#ea628b,#f4b1f5,#b3b2f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.wrapper {
+
+    /*display: flex;*/
+    /*justify-content: space-between; !* Прижатие элементов по краям *!*/
+}
+
+.offer {
+    /*margin-top: 50px; !* Отступ от логотипа *!*/
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.title span {
+    color: #34b1e7;
+}
+
+.intro {
+    margin-bottom: 37px;
+    margin-top: 30px;
+    width: 100%; /* Длина текстового описания под заголовком */
+}
+
+.wrapper_buttons {
+    display: flex;
+}
+
+
+.btn, .btn_booking, .btn_record {
+    /* Основное оформление для кнопки */
+    font-family: 'Montserrat', sans-serif;
+    background: #E54481;
+    color: #fff;
+    border-radius: 100px;
+    display: block;
+    width: 205px;
+    padding: 19px 0; /* Отступы внутри кнопки сверху и снизу*/
+    text-align: center;
+    text-decoration: none; /* Убираем подчеркивание у тега a */
+    transition: all 0.5s ease;
+}
+
+.btn_record_free{
+    text-decoration: none;
+    color: black;
+
+    margin-left: 190px;
+    margin-top: 20px;
+}
+
+.btn_record {
+    margin-right: 5px;
+}
+
+.btn_booking {
+    background: none;
+    border: 1px solid #E54481;
+}
+
+.btn_record:hover { /* Цвет текста при наведении */
+    background: rgba(211, 13, 192, 1);
+}
+
+.btn_booking:hover {
+
+    background: -webkit-linear-gradient(90deg,#ea628b,#f4b1f5,#b3b2f5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(90deg,#ea628b,#f4b1f5,#b3b2f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.btn:hover { /* Цвет текста при наведении */
+    background: rgba(211, 13, 192, 1);
+}
+
+
+
+.learn {
+    padding-top: 108px;
+    padding-bottom: 0px;
+}
+
+
+
+.learn-rate {
+    padding-top: 108px;
+    padding-bottom: 108px;
+
+    background: -webkit-linear-gradient(90deg,#ea628b,#f4b1f5,#b3b2f5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(90deg,#ea628b,#f4b1f5,#b3b2f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.section-title {
+    font-size: 25px;
+}
+
+.section-title-h2, .section-title_rate {
+    font-size: 25px;
+    text-align: center;
+}
+
+.section-title-rate-p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+    color: rgba(84, 84, 84, 1);
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 70px;
+}
+
+.skill_1 {
+    width: 350px;
+    background: url('../img/book.png') no-repeat left top;
+    background-size: 100px;
+    padding-left: 100px;
+}
+
+.skill-title {
+    font-size: 18px;
+}
+
+.skill-text {
+    margin-top: 7px;
+}
+
+.skill_2 {
+    width: 380px;
+    background: url('../img/assistent.png') no-repeat left top;
+    background-size: 80px;
+}
+
+.skill_3 {
+    background: url('../img/pig.png') no-repeat left top;
+    background-size: 90px;
+}
+
+.program-container {
+
+
+    margin-top: 70px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.program-container-1 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.program-container-2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.program {
+    height: 420px;
+    width: 340px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(122, 122, 122, 0.5);
+    border-radius: 15px;
+    /*transition: all 0.5s ease;*/
+    margin: 20px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+
+.program:hover{
+    transform: scale(1.1);
+}
+
+.pr_img{
+    margin: 0 auto;
+    height: 220px;
+}
+
+.img-program{
+    width: 50%;
+    position: center;
+    margin: 20px 0 0 0;
+}
+
+.program-p-h{
+    font-weight: bold;
+}
+
+.pr_price{
+    background-color: #2ecc71;
+    width: 20%;
+    margin: 0 0 0 20px;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.pr_price_out{
+    width: 15%;
+    margin: -10px 0 0 20px;
+    font-weight: bold;
+    color: black;
+    font-size: 13px;
+    text-decoration: line-through red;
+}
+
+.pr_button{
+    color: white;
+    background-color: #e34761;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+.feedback {
+    display: flex;
+
+}
+
+.feedback-text {
+    width: 70%;
+    margin: auto 30px;
+}
+
+.img-feedback {
+    height: 200px;
+    border-radius: 100px;
+}
+
+.skills_rate {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.colomn_1, .colomn_2, .colomn_3 {
+    background-color: #fff;
+    width: 280px;
+    height: 600px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.colomn_1 {
+    border-radius: 15px 0 0 15px;
+}
+
+.colomn_2 {
+    box-shadow: 0 0 20px rgba(122, 122, 122, 0.5);
+    z-index: 1;
+}
+
+.colomn_3 {
+    border-radius: 0 15px 15px 0;
+}
+
+.colomn-title {
+    margin-top: 50px;
+    height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.colomn-text {
+    margin: auto;
+    height: 420px;
+}
+
+.hr-rate {
+    border: none; /* Убираем границу */
+    background-color: rgba(166, 166, 166, 1); /* Цвет линии */
+    width: 180px;
+    height: 0.5px; /* Толщина линии */
+}
+
+.money-rate {
+    margin: 0 auto;
+    color: rgba(143, 0, 255, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    padding: 5px 5px 0 5px;
+    height: 65px;
+}
+
+.money-rate-rub{
+    color: rgba(113, 113, 113, 1);
+    margin: 0 auto;
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+
+.content-tariff{
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.content-case-yes, .content-case-no{
+    margin: 15px 0;
+}
+
+.content-case-yes {
+    list-style-type: none; /* Убираем маркеры у списка */
+    font-size: 13px;
+}
+
+.content-case-yes:before {
+    content: "✔ "; /* Добавляем в качестве маркера символ */
+}
+
+.content-case-no {
+    list-style-type: none; /* Убираем маркеры у списка */
+    font-size: 13px;
+    color: rgba(163, 163, 163, 1);
+}
+.content-case-no:before {
+    content: "✘ "; /* Добавляем в качестве маркера символ */
+}
+
+
+
+.btn_colomn {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    border: 2px solid rgba(0, 164, 46, 1);
+    border-radius: 100px;
+    display: block;
+    width: 205px;
+    padding: 19px 0; /* Отступы внутри кнопки сверху и снизу*/
+    text-align: center;
+    text-decoration: none; /* Убираем подчеркивание у тега a */
+    margin: auto;
+    transition: all 0.5s ease;
+}
+
+.btn_colomn:hover {
+    background: rgba(0, 164, 46, 1);
+    color: white;
+}
+
+.mail {
+    background: #efecf4;
+    padding-top: 173px;
+    padding-bottom: 190px;
+}
+
+.form {
+    margin-top: 40px;
+    text-align: right;
+}
+
+.input {
+
+    margin-bottom: 20px;
+    width: 474px;
+    border: 1px solid #bfb8d1;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 100px;
+    height: 54px;
+    padding-left: 38px;
+}
+
+.btn-form {
+    border: 0;
+    cursor: pointer;
+    display: inline;
+    margin-left: 11px;
+}
+
+.footer {
+    padding: 33px 0;
+    background: #201b2d;
+}
+
+.footer_phone {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_year {
+    text-align: center;
+}
+
+.p_phone {
+    color: #d4cee3;
+}
+
+.credits {
+    color: #d4cee3;
+    font-size: 10px;
+}
+
+
+.red {
+    color: red;
+}
+
+.animated {
+    opacity: 0;
+}
+
+
+/*Адаптивность (диапазоны, как в бутстрапе)
+От большего к меньше (от desktop версии к мобильной)*/
+
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .picture {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .offer {
+        width: 100%;
+    }
+
+    .intro {
+        width: auto;
+    }
+
+    .desktop {
+        display: block;
+        width: 549px;
+        margin: 72px auto 0;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .skill_1 {
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+    .colomn {
+        margin-bottom: 30px;
+    }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+    .desktop {
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .btn {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    body.lock {
+        overflow: hidden;
+    }
+
+    .header {
+        padding-top: 10px; /* Отступ сверху для header */
+        padding-bottom: 10px;
+    }
+
+    .logo {
+        width: 100px;
+        z-index: 3;
+    }
+
+    .header_burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+
+    }
+
+    .header_burger span {
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header_burger:before,
+    .header_burger:after {
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header_burger:before {
+        top: 0;
+        z-index: 3;
+    }
+
+    .header_burger:after {
+        bottom: 0;
+    }
+
+    .header_burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .header_burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .header_burger.active span {
+        transform: scale(0);
+    }
+
+    .header_menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        padding: 100px 10px 20px 10px;
+        transition: all 0.3s ease 0s;
+        overflow: auto;
+    }
+
+    .header_menu.active {
+        background-color: #e34761;
+        top: 0;
+    }
+
+    .header_list {
+        display: block;
+    }
+
+    .header_list li {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .header_link {
+        font-size: 18px;
+    }
+
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+}
