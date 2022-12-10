@@ -722,6 +722,9 @@ p {
         display: flex;
         flex-direction: column;
     }
+    .footer {
+        position: relative;
+    }
 }
 
 /* 320px - 576px */

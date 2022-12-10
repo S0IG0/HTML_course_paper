@@ -565,6 +565,9 @@ p {
     #btn3:checked~.slider-inner .slides {
         transform: translate(-780px);
     }
+    .footer{
+        position: relative;
+    }
 }
 
 /* 320px - 576px */
