@@ -746,8 +746,9 @@ p {
         margin-left: 15px;
     }
     .pr_price_out {
-        width: 25%;
-        margin-left: 10px;
+        width: 40%;
+        margin: 0 0 0 -5px;
+        text-decoration: line-through red;
     }
 
     .pr_intro{
